@@ -1,85 +1,117 @@
-/* ---- reset ---- */
-
+/* Reset*/
 html {
     box-sizing: border-box;
-    background-color:transparent;
-}
-
-*, *:before, *:after {
+  }
+  *, *:before, *:after {
     box-sizing: inherit;
-}
-
-body {
+  }
+  body {
     margin: 0;
-    padding: 10px;
-    font-family: Georgia, Times;
-}
-img{
-    max-width: 110px;
-}
-
-p{
-    line-height: 1.5;
-    padding-bottom: 15px;
-    padding-top: 15px;
-}
-
-/* ---- layout ---- */
-
-.container{
-    margin:0 20px 0 20px;
-}
-
-/* ---- header ---- */
-header.header{
+    padding: 0;
+    font-family: sans-serif;
+    color: #5b5e6d;
+    line-height: 1.5em; 
+  }
+  img{
+    max-width: 100%;
+  }
+  
+  /*Layout*/
+  .container{
+    margin: 0 25px;
+  }
+  
+  /*Header*/
+  header.header{
     overflow: hidden;
     position: fixed;
     width: 100%;
     padding-top: 5px;
     left: 0;
-    top: 0;
-    background: #fff;
-    box-shadow: (0,0,0,.15);
-}
-
-header .nav-bar ul{
+    right: 0;
+    background-color: #fff;
+    box-shadow: rgba(0,0,0,.15);
+  }
+  header .nav-bar ul{
     display: none;
-}
-
-
-header .slack-logo{
+  }
+  header .slack-logo{
     width: 130px;
     float: left;
-    padding-top: 5px;
-}
-
-header .nav-bar .border-menu{
+  }
+  header .nav-bar .menu-icon{
     width: 25px;
     float: right;
-    padding-top: 15px;
-    margin-right: 20px;
-
-
-}
-
-/* ---- section ---- */
-
-section.intro{
-    margin-top: 80px;
-}
-
-.link-button {
-    margin-top: 30px;
-    background-color:#3f46ad;
-    color: white;
+    padding-top: 13px;
+  }
+  
+  /* Sections */
+  section.intro, section.features{
+    padding: 20px 0;
+  }
+  
+  /* Section intro*/
+  section.intro {
+    padding-top: 54px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  h1 {
+    font-size: 2.4em;
+    line-height: 1.05em;
+    color: #323648;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  section a.link-button{
     text-decoration: none;
-    display: block;
-    font-family: sans-serif;
+    background-color: #3f46ad;
     text-transform: uppercase;
+    color: white;
+    padding: 20px 10px;
+    display: block;
     text-align: center;
-    padding: 19px 40px 20px; border-radius: 10px;
-    }
+    letter-spacing: 0.1em;
+    font-size: 0.8em;
+    border-radius: 5px;
+    margin-top: 50px;
+  }
+  a.login{
+    text-decoration: none;
+    color: #3f46ad;
+    font-weight: bold;
+  }
+  
+  /*Section features*/
+  section.features.container{
+    padding-top: 40px;
+  }
+  h2 {
+    font-size: 1.8em;
+    line-height: 1.05em;
+    color: #323648;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+  }
+  img.features-img{
+    width: 110px;
+    margin-bottom: 0;
+  }
+  p.item-title{
+    font-weight: bold;
+    margin: 0;
+  }
+  p.item-description{
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+  a.more-info{
+    text-decoration: none;
+    color: #3f46ad;
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+  }
+  hr{
+    background-color: #3f46ad;
     
-p.feature {
-    font-family: sans-serif;
-    }
+  }
